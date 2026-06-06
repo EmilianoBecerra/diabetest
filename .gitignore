@@ -1,0 +1,15 @@
+# Entorno (credenciales de MongoDB, etc.)
+.env
+
+# Dependencias
+node_modules/
+
+# Datos de seed/referencia (archivos grandes, no son código)
+backend/foods.json
+backend/reference.json
+
+# Notas personales
+TAREAS.md
+
+# Windows
+Thumbs.db

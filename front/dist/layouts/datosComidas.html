@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/front/dist/assets/index.css">
+    <link rel="stylesheet" href="../assets/datosComidas.css">
+    <script src="../../src/render/mostrarAlimentosYDetalle.js" type="module" defer></script>
+    <title>DiabeTest</title>
+</head>
+
+<body>
+    <header>
+        <h1><a href="/front/dist/index.html">DiabeTest</a></h1>
+        <nav>
+            <a href="../index.html">Cargar datos</a>
+            <a href="/front/dist/layouts/verDatos.html">Ver datos</a>
+        </nav>
+    </header>
+    <main>
+        <form class="form-datosComida">
+            <div class="agrupar-input">
+                <label for="nombreComida">Ingresar el nombre de la comida</label>
+                <input type="text" id="nombreComida" name="nombreComida" placeholder="Ingresar nombre comida">
+            </div>
+            <button type="submit" >Buscar</button>
+        </form>
+
+        <div class="datosAlimentos">
+          
+        </div>
+    </main>
+    <footer>
+        <p>
+            Desarrollado por Emiliano Becerra
+        </p>
+    </footer>
+</body>
+
+</html>

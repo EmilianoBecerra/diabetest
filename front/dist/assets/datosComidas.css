@@ -1,0 +1,96 @@
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#nombreComida {
+  font-size: 20px;
+  padding: 2px;
+  margin: 2px;
+  text-transform: capitalize;
+}
+
+.form-datosComida button {
+  margin-top: 20px;
+  width: 100px;
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 5px;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid black;
+}
+
+.datosAlimentos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  width: 100%;
+}
+
+.datosAlimentos ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.datosAlimentos ul li {
+  border: 1px solid black;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.datosAlimentos ul li h3,
+p {
+  margin: 2px;
+  text-transform: capitalize;
+}
+
+.datosAlimentos table {
+  border-collapse: collapse;
+  border: 2px solid rgb(140 140 140);
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+caption {
+  caption-side: bottom;
+  padding: 10px;
+  font-weight: bold;
+}
+
+th,
+td {
+  border: 1px solid rgb(160 160 160);
+  padding: 8px 10px;
+  text-transform: capitalize;
+}
+
+td:last-of-type {
+  text-align: center;
+}
+
+tbody>tr:nth-of-type(even) {
+  background-color: rgb(237 238 242);
+}
+
+tfoot th {
+  text-align: right;
+}
+
+tfoot td {
+  font-weight: bold;
+}
+
+.datosAlimentos table tr {
+  text-align: center;
+}
