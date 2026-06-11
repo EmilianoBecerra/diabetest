@@ -1,0 +1,111 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 6px 3px;
+}
+
+#medicion {
+    text-align: center;
+    outline: none;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+.section-comidas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: 2px solid white;
+    padding: 6px;
+    border-radius: 6px;
+}
+
+.section-comidas h2 {
+    font-size: 40px;
+    text-align: center;
+}
+
+#comida-container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   padding: 5px;
+}
+
+.card-comida {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    padding: 30px;
+    border-radius: 3px;
+    margin: 10px;
+    position: relative;
+}
+
+span[data-name=delete-box]{ 
+    color: red;
+    position: absolute;
+    right: 6px;
+    top: 3px;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 2px 5px;
+}
+
+.card-comida input {
+    font-size: 18px;
+    text-align: center;
+    padding: 3px;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    margin: 3px;
+    color: black;
+    text-transform: capitalize;
+}
+
+.agregar-comida{ 
+    padding: 6px;
+    font-size: 15px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    margin: 3px;
+    width: 200px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.form-comidas {
+    padding: 6px;
+    font-size: 15px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    width: 200px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-top: 6px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.comidas {
+    border: 1px solid black;
+}

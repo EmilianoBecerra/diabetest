@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/cargarComida.css">
+    <link rel="preload" href="./assets/fonts/Hackensack-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+    <script src="/index.js" defer type="module"></script>
+    <title>DiabeTest</title>
+</head>
+
+<body>
+    <header>
+        <h1><a href="/dist/index.html">DiabeTest</a></h1>
+        <nav>
+            <a href="/layouts/verDatos.html">Ver datos</a>
+            <a href="/layouts/datosComidas.html">Datos comidas</a>
+        </nav>
+    </header>
+    <main>
+        <form class="form">
+            <input id="medicion" name="medicion" type="number" placeholder="Medición de glucosa" min="0" required>
+            <section class="section-comidas">
+                <h2>
+                    Comidas
+                </h2>
+                <div id="comida-container">
+                    <article class="card-comida">
+                        <span data-name="delete-box">X</span>
+                        <input type="text" data-name="comida" placeholder="nombre comida" required>
+                        <div class="input-wrapper">
+                            <input type="number" data-name="cantidad" placeholder="cantidad" required>
+                            <!--<span class="suffix">gr</span> -->
+                        </div>
+                    </article>
+                </div>
+                <button type="button" class="agregar-comida">Agregar Comida</button>
+            </section>
+            <button type="submit" class="form-comidas">Guardar Comidas</button>
+        </form>
+        <template class="comida-card-temp">
+            <article class="card-comida">
+                <span data-name="delete-box">X</span>
+                <input type="text" data-name="comida" placeholder="nombre comida" required>
+                <div class="input-wrapper">
+                    <input type="number" data-name="cantidad" placeholder="cantidad" required>
+                    <!--<span class="suffix">gr</span> -->
+                </div>
+            </article>
+        </template>
+    </main>
+    <footer>
+        <p>Desarrollado por Emiliano Becerra</p>
+    </footer>
+</body>
+
+</html>

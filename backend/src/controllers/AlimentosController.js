@@ -1,29 +1,30 @@
 import alimentosModel from "../models/AlimentoModel.js"
 
-
-
-
 export const obtenerAlimentosPorNombre = async ( req, res ) => {
     const nombreAlimento = req.params.name;
-    const todosAlimentos = await alimentosModel.find( );
-    const alimentos = [];
-    todosAlimentos.map( alimento => {
-        if( alimento.name.includes( nombreAlimento ) ) {
-            const alimentoObj = {
-                name : alimento.name,
-                category: alimento.category,
-                subcategory: alimento.subcategory,
-                id: alimento._id
+    try {
+        const todosAlimentos = await alimentosModel.find( );
+        if( !todosAlimentos ) throw new Error( "Error al buscar los alimentos" );
+        const alimentos = [];
+        todosAlimentos.map( alimento => {
+            if( alimento.name.includes( nombreAlimento ) ) {
+                const alimentoObj = {
+                    name : alimento.name,
+                    category: alimento.category,
+                    subcategory: alimento.subcategory,
+                    id: alimento._id
+                }
+                alimentos.push( alimentoObj );
             }
-            alimentos.push( alimentoObj );
         }
+        )
+       res.status( 200 ).json( alimentos );
+    } catch( error ) {
+        res.status( 400 ).json( error ); 
     }
-    )
-   res.json(alimentos);
 }
 
 export const obtenerAlimento = async ( req, res ) => {
-    
 
     const alimento = await alimentosModel.findOne( { name: nombreAlimento } );
     console.log(alimento);

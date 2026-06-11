@@ -1,0 +1,33 @@
+{
+  "name": "front",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "vite build",
+    "dev": "vite",
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist",
+    "format": "oxfmt src/",
+    "lint": "oxlint src/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "^11.5.2",
+      "onFail": "download"
+    }
+  },
+  "type": "module",
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "oxfmt": "^0.54.0",
+    "oxlint": "^1.69.0",
+    "servor": "^4.0.2",
+    "vite": "^8.0.16"
+  }
+}
